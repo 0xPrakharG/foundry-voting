@@ -87,10 +87,28 @@ contract Voting {
         poll.active = false;
     }
 
-    // function getVoteCount(
-    //     uint256 _pollId,
-    //     uint256 _optionId
-    // ) public view returns (uint256) {
+    function getPoll(
+        uint256 pollId
+    )
+        public
+        view
+        returns (
+            string memory question,
+            string[] memory pollOptions,
+            bool active,
+            address creator
+        )
+    {
+        Poll storage poll = polls[pollId];
 
-    // }
+        uint256 numOptions = poll.options.length;
+
+        string[] memory optionsArray = new string[](numOptions);
+
+        for (uint256 i = 0; i < numOptions; i++) {
+            optionsArray[i] = poll.options[i];
+        }
+
+        return (poll.question, optionsArray, poll.active, poll.creator);
+    }
 }
