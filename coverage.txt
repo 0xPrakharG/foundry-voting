@@ -1,300 +1,334 @@
-Compiling 25 files with Solc 0.8.27
-Solc 0.8.27 finished in 2.83s
+Compiling 28 files with Solc 0.8.27
+Solc 0.8.27 finished in 2.94s
 Compiler run successful!
 Analysing contracts...
 Running tests...
 
-Ran 11 tests for test/unit/VotingTest.t.sol:VotingTest
+Ran 1 test for test/integration/DeployVotingTest.t.sol:DeployVotingTest
+[PASS] testVotingIsDeployed() (gas: 2360)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 6.63ms (174.33µs CPU time)
+
+Ran 12 tests for test/unit/VotingTest.t.sol:VotingTest
 [PASS] testClosePollRevertsIfNotCreator() (gas: 160120)
-[PASS] testClosePollRevertsIfPollNotExists() (gas: 11666)
-[PASS] testCreatePoll() (gas: 161551)
-[PASS] testCreatePollEmits() (gas: 287440)
-[PASS] testPollCountIncreasedOrNot() (gas: 155013)
+[PASS] testClosePollRevertsIfPollNotExists() (gas: 11711)
+[PASS] testCreatePoll() (gas: 161441)
+[PASS] testCreatePollEmitsPollCreatedEvent() (gas: 161843)
+[PASS] testPollCountIncreasedOrNot() (gas: 155035)
 [PASS] testViewVoteRevertsIfOptionSelectedIsInvalid() (gas: 157921)
 [PASS] testViewVoteRevertsIfPollNotExists() (gas: 12171)
-[PASS] testVoteCountIncreased() (gas: 219046)
-[PASS] testVoteRevertsIfOptionSelectedIsInvalid() (gas: 161140)
-[PASS] testVoteRevertsIfPollNotActive() (gas: 159962)
-[PASS] testVoteRevertsIfPollNotExists() (gas: 12158)
-Suite result: ok. 11 passed; 0 failed; 0 skipped; finished in 43.31ms (15.84ms CPU time)
+[PASS] testVoteCountIncreased() (gas: 219068)
+[PASS] testVoteEmitsVoteCastedEvent() (gas: 187194)
+[PASS] testVoteRevertsIfOptionSelectedIsInvalid() (gas: 161185)
+[PASS] testVoteRevertsIfPollNotActive() (gas: 159940)
+[PASS] testVoteRevertsIfPollNotExists() (gas: 12180)
+Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 48.72ms (13.57ms CPU time)
 
-Ran 1 test suite in 268.13ms (43.31ms CPU time): 11 tests passed, 0 failed, 0 skipped (11 total tests)
+Ran 2 test suites in 269.49ms (55.35ms CPU time): 13 tests passed, 0 failed, 0 skipped (13 total tests)
+Uncovered for script/DeployVoting.s.sol:
+
 Uncovered for src/Voting.sol:
 
-Anchors for Contract "IERC20" (solc 0.8.27, source ID 17):
+Anchors for Contract "IERC721Enumerable" (solc 0.8.27, source ID 19):
 
-Anchors for Contract "StdCheats" (solc 0.8.27, source ID 3):
+Anchors for Contract "StdAssertions" (solc 0.8.27, source ID 2):
 
-Anchors for Contract "IERC721" (solc 0.8.27, source ID 18):
+Anchors for Contract "Voting" (solc 0.8.27, source ID 25):
+- IC 151 -> Item 7
+- Creation code
+  - Refers to item: Function "createPoll" (location: source ID 25, line 30, chars 708-1118, hits: 9)
+- IC 508 -> Item 8
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 34, chars 818-857, hits: 9)
+- IC 508 -> Item 9
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 34, chars 818-857, hits: 9)
+- IC 532 -> Item 10
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 35, chars 867-895, hits: 9)
+- IC 532 -> Item 11
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 35, chars 867-895, hits: 9)
+- IC 550 -> Item 12
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 36, chars 905-931, hits: 9)
+- IC 550 -> Item 13
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 36, chars 905-931, hits: 9)
+- IC 575 -> Item 14
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 37, chars 941-962, hits: 9)
+- IC 575 -> Item 15
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 37, chars 941-962, hits: 9)
+- IC 604 -> Item 16
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 38, chars 972-993, hits: 9)
+- IC 604 -> Item 17
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 38, chars 972-993, hits: 9)
+- IC 633 -> Item 18
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 39, chars 1003-1031, hits: 9)
+- IC 633 -> Item 19
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 39, chars 1003-1031, hits: 9)
+- IC 700 -> Item 20
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 41, chars 1042-1090, hits: 9)
+- IC 700 -> Item 21
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 41, chars 1042-1090, hits: 9)
+- IC 761 -> Item 22
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 42, chars 1100-1111, hits: 9)
+- IC 761 -> Item 23
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 42, chars 1100-1111, hits: 9)
+- IC 288 -> Item 24
+- Creation code
+  - Refers to item: Function "vote" (location: source ID 25, line 45, chars 1124-1628, hits: 7)
+- IC 1302 -> Item 25
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 46, chars 1191-1225, hits: 7)
+- IC 1302 -> Item 26
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 46, chars 1191-1225, hits: 7)
+- IC 1325 -> Item 27
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 47, chars 1239-1251, hits: 7)
+- IC 1325 -> Item 28
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 47, chars 1239-1251, hits: 7)
+- IC 1347 -> Item 29
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 25, line 47, chars 1253-1311, hits: 1)
+- IC 1347 -> Item 30
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 48, chars 1267-1300, hits: 1)
+- IC 1347 -> Item 31
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 48, chars 1267-1300, hits: 1)
+- IC 1397 -> Item 32
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 50, chars 1324-1336, hits: 6)
+- IC 1397 -> Item 33
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 50, chars 1324-1336, hits: 6)
+- IC 1419 -> Item 34
+- Creation code
+  - Refers to item: Branch (branch: 1, path: 0) (location: source ID 25, line 50, chars 1338-1395, hits: 1)
+- IC 1419 -> Item 35
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 51, chars 1352-1384, hits: 1)
+- IC 1419 -> Item 36
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 51, chars 1352-1384, hits: 1)
+- IC 1469 -> Item 37
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 53, chars 1404-1436, hits: 5)
+- IC 1469 -> Item 38
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 53, chars 1404-1436, hits: 5)
+- IC 1485 -> Item 39
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 54, chars 1450-1482, hits: 5)
+- IC 1485 -> Item 40
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 54, chars 1450-1482, hits: 5)
+- IC 1499 -> Item 41
+- Creation code
+  - Refers to item: Branch (branch: 2, path: 0) (location: source ID 25, line 54, chars 1484-1539, hits: 1)
+- IC 1499 -> Item 42
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 55, chars 1498-1528, hits: 1)
+- IC 1499 -> Item 43
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 55, chars 1498-1528, hits: 1)
+- IC 1549 -> Item 44
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 58, chars 1549-1575, hits: 4)
+- IC 1549 -> Item 45
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 58, chars 1549-1575, hits: 4)
+- IC 1594 -> Item 46
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 60, chars 1586-1621, hits: 4)
+- IC 1594 -> Item 47
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 60, chars 1586-1621, hits: 4)
+- IC 103 -> Item 48
+- Creation code
+  - Refers to item: Function "viewVotes" (location: source ID 25, line 63, chars 1634-2018, hits: 4)
+- IC 319 -> Item 49
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 67, chars 1751-1785, hits: 4)
+- IC 319 -> Item 50
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 67, chars 1751-1785, hits: 4)
+- IC 341 -> Item 51
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 68, chars 1799-1811, hits: 4)
+- IC 341 -> Item 52
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 68, chars 1799-1811, hits: 4)
+- IC 363 -> Item 53
+- Creation code
+  - Refers to item: Branch (branch: 3, path: 0) (location: source ID 25, line 68, chars 1813-1871, hits: 1)
+- IC 363 -> Item 54
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 69, chars 1827-1860, hits: 1)
+- IC 363 -> Item 55
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 69, chars 1827-1860, hits: 1)
+- IC 413 -> Item 56
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 71, chars 1884-1916, hits: 3)
+- IC 413 -> Item 57
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 71, chars 1884-1916, hits: 3)
+- IC 427 -> Item 58
+- Creation code
+  - Refers to item: Branch (branch: 4, path: 0) (location: source ID 25, line 71, chars 1918-1973, hits: 1)
+- IC 427 -> Item 59
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 72, chars 1932-1962, hits: 1)
+- IC 427 -> Item 60
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 72, chars 1932-1962, hits: 1)
+- IC 477 -> Item 61
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 75, chars 1983-2011, hits: 2)
+- IC 477 -> Item 62
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 75, chars 1983-2011, hits: 2)
+- IC 209 -> Item 63
+- Creation code
+  - Refers to item: Function "closePoll" (location: source ID 25, line 78, chars 2024-2343, hits: 3)
+- IC 795 -> Item 64
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 79, chars 2077-2111, hits: 3)
+- IC 795 -> Item 65
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 79, chars 2077-2111, hits: 3)
+- IC 818 -> Item 66
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 80, chars 2125-2137, hits: 3)
+- IC 818 -> Item 67
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 80, chars 2125-2137, hits: 3)
+- IC 840 -> Item 68
+- Creation code
+  - Refers to item: Branch (branch: 5, path: 0) (location: source ID 25, line 80, chars 2139-2197, hits: 1)
+- IC 840 -> Item 69
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 81, chars 2153-2186, hits: 1)
+- IC 840 -> Item 70
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 81, chars 2153-2186, hits: 1)
+- IC 890 -> Item 71
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 83, chars 2210-2236, hits: 2)
+- IC 890 -> Item 72
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 83, chars 2210-2236, hits: 2)
+- IC 977 -> Item 73
+- Creation code
+  - Refers to item: Branch (branch: 6, path: 0) (location: source ID 25, line 83, chars 2238-2307, hits: 1)
+- IC 977 -> Item 74
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 84, chars 2252-2296, hits: 1)
+- IC 977 -> Item 75
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 84, chars 2252-2296, hits: 1)
+- IC 1027 -> Item 76
+- Creation code
+  - Refers to item: Line (location: source ID 25, line 87, chars 2317-2336, hits: 1)
+- IC 1027 -> Item 77
+- Creation code
+  - Refers to item: Statement (location: source ID 25, line 87, chars 2317-2336, hits: 1)
 
-Anchors for Contract "stdToml" (solc 0.8.27, source ID 10):
+Anchors for Contract "MockERC20" (solc 0.8.27, source ID 21):
 
-Anchors for Contract "ScriptBase" (solc 0.8.27, source ID 0):
+Anchors for Contract "StdCheats" (solc 0.8.27, source ID 4):
 
-Anchors for Contract "StdStyle" (solc 0.8.27, source ID 9):
+Anchors for Contract "StdChains" (solc 0.8.27, source ID 3):
 
-Anchors for Contract "MockERC20" (solc 0.8.27, source ID 20):
-
-Anchors for Contract "stdMath" (solc 0.8.27, source ID 7):
-
-Anchors for Contract "StdChains" (solc 0.8.27, source ID 2):
-
-Anchors for Contract "StdInvariant" (solc 0.8.27, source ID 5):
-
-Anchors for Contract "stdError" (solc 0.8.27, source ID 4):
-
-Anchors for Contract "IMulticall3" (solc 0.8.27, source ID 19):
-
-Anchors for Contract "StdCheatsSafe" (solc 0.8.27, source ID 3):
-
-Anchors for Contract "IERC721Metadata" (solc 0.8.27, source ID 18):
-
-Anchors for Contract "StdAssertions" (solc 0.8.27, source ID 1):
-
-Anchors for Contract "console" (solc 0.8.27, source ID 14):
-
-Anchors for Contract "IERC165" (solc 0.8.27, source ID 16):
-
-Anchors for Contract "Test" (solc 0.8.27, source ID 12):
-
-Anchors for Contract "safeconsole" (solc 0.8.27, source ID 22):
-
-Anchors for Contract "IERC721Enumerable" (solc 0.8.27, source ID 18):
-
-Anchors for Contract "Vm" (solc 0.8.27, source ID 13):
-
-Anchors for Contract "IERC721TokenReceiver" (solc 0.8.27, source ID 18):
-
-Anchors for Contract "VmSafe" (solc 0.8.27, source ID 13):
-
-Anchors for Contract "stdJson" (solc 0.8.27, source ID 6):
-
-Anchors for Contract "stdStorageSafe" (solc 0.8.27, source ID 8):
-
-Anchors for Contract "CommonBase" (solc 0.8.27, source ID 0):
-
-Anchors for Contract "stdStorage" (solc 0.8.27, source ID 8):
-
-Anchors for Contract "Voting" (solc 0.8.27, source ID 23):
-- IC 151 -> Item 0
-- Creation code
-  - Refers to item: Function "createPoll" (location: source ID 23, line 30, chars 708-1118, hits: 9)
-- IC 508 -> Item 1
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 34, chars 818-857, hits: 9)
-- IC 508 -> Item 2
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 34, chars 818-857, hits: 9)
-- IC 532 -> Item 3
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 35, chars 867-895, hits: 9)
-- IC 532 -> Item 4
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 35, chars 867-895, hits: 9)
-- IC 550 -> Item 5
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 36, chars 905-931, hits: 9)
-- IC 550 -> Item 6
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 36, chars 905-931, hits: 9)
-- IC 575 -> Item 7
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 37, chars 941-962, hits: 9)
-- IC 575 -> Item 8
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 37, chars 941-962, hits: 9)
-- IC 604 -> Item 9
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 38, chars 972-993, hits: 9)
-- IC 604 -> Item 10
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 38, chars 972-993, hits: 9)
-- IC 633 -> Item 11
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 39, chars 1003-1031, hits: 9)
-- IC 633 -> Item 12
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 39, chars 1003-1031, hits: 9)
-- IC 700 -> Item 13
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 41, chars 1042-1090, hits: 9)
-- IC 700 -> Item 14
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 41, chars 1042-1090, hits: 9)
-- IC 761 -> Item 15
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 42, chars 1100-1111, hits: 9)
-- IC 761 -> Item 16
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 42, chars 1100-1111, hits: 9)
-- IC 288 -> Item 17
-- Creation code
-  - Refers to item: Function "vote" (location: source ID 23, line 45, chars 1124-1628, hits: 6)
-- IC 1302 -> Item 18
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 46, chars 1191-1225, hits: 6)
-- IC 1302 -> Item 19
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 46, chars 1191-1225, hits: 6)
-- IC 1325 -> Item 20
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 47, chars 1239-1251, hits: 6)
-- IC 1325 -> Item 21
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 47, chars 1239-1251, hits: 6)
-- IC 1347 -> Item 22
-- Creation code
-  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 23, line 47, chars 1253-1311, hits: 1)
-- IC 1347 -> Item 23
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 48, chars 1267-1300, hits: 1)
-- IC 1347 -> Item 24
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 48, chars 1267-1300, hits: 1)
-- IC 1397 -> Item 25
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 50, chars 1324-1336, hits: 5)
-- IC 1397 -> Item 26
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 50, chars 1324-1336, hits: 5)
-- IC 1419 -> Item 27
-- Creation code
-  - Refers to item: Branch (branch: 1, path: 0) (location: source ID 23, line 50, chars 1338-1395, hits: 1)
-- IC 1419 -> Item 28
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 51, chars 1352-1384, hits: 1)
-- IC 1419 -> Item 29
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 51, chars 1352-1384, hits: 1)
-- IC 1469 -> Item 30
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 53, chars 1404-1436, hits: 4)
-- IC 1469 -> Item 31
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 53, chars 1404-1436, hits: 4)
-- IC 1485 -> Item 32
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 54, chars 1450-1482, hits: 4)
-- IC 1485 -> Item 33
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 54, chars 1450-1482, hits: 4)
-- IC 1499 -> Item 34
-- Creation code
-  - Refers to item: Branch (branch: 2, path: 0) (location: source ID 23, line 54, chars 1484-1539, hits: 1)
-- IC 1499 -> Item 35
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 55, chars 1498-1528, hits: 1)
-- IC 1499 -> Item 36
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 55, chars 1498-1528, hits: 1)
-- IC 1549 -> Item 37
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 58, chars 1549-1575, hits: 3)
-- IC 1549 -> Item 38
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 58, chars 1549-1575, hits: 3)
-- IC 1594 -> Item 39
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 60, chars 1586-1621, hits: 3)
-- IC 1594 -> Item 40
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 60, chars 1586-1621, hits: 3)
-- IC 103 -> Item 41
-- Creation code
-  - Refers to item: Function "viewVotes" (location: source ID 23, line 63, chars 1634-2018, hits: 4)
-- IC 319 -> Item 42
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 67, chars 1751-1785, hits: 4)
-- IC 319 -> Item 43
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 67, chars 1751-1785, hits: 4)
-- IC 341 -> Item 44
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 68, chars 1799-1811, hits: 4)
-- IC 341 -> Item 45
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 68, chars 1799-1811, hits: 4)
-- IC 363 -> Item 46
-- Creation code
-  - Refers to item: Branch (branch: 3, path: 0) (location: source ID 23, line 68, chars 1813-1871, hits: 1)
-- IC 363 -> Item 47
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 69, chars 1827-1860, hits: 1)
-- IC 363 -> Item 48
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 69, chars 1827-1860, hits: 1)
-- IC 413 -> Item 49
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 71, chars 1884-1916, hits: 3)
-- IC 413 -> Item 50
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 71, chars 1884-1916, hits: 3)
-- IC 427 -> Item 51
-- Creation code
-  - Refers to item: Branch (branch: 4, path: 0) (location: source ID 23, line 71, chars 1918-1973, hits: 1)
-- IC 427 -> Item 52
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 72, chars 1932-1962, hits: 1)
-- IC 427 -> Item 53
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 72, chars 1932-1962, hits: 1)
-- IC 477 -> Item 54
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 75, chars 1983-2011, hits: 2)
-- IC 477 -> Item 55
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 75, chars 1983-2011, hits: 2)
-- IC 209 -> Item 56
-- Creation code
-  - Refers to item: Function "closePoll" (location: source ID 23, line 78, chars 2024-2343, hits: 3)
-- IC 795 -> Item 57
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 79, chars 2077-2111, hits: 3)
-- IC 795 -> Item 58
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 79, chars 2077-2111, hits: 3)
-- IC 818 -> Item 59
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 80, chars 2125-2137, hits: 3)
-- IC 818 -> Item 60
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 80, chars 2125-2137, hits: 3)
-- IC 840 -> Item 61
-- Creation code
-  - Refers to item: Branch (branch: 5, path: 0) (location: source ID 23, line 80, chars 2139-2197, hits: 1)
-- IC 840 -> Item 62
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 81, chars 2153-2186, hits: 1)
-- IC 840 -> Item 63
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 81, chars 2153-2186, hits: 1)
-- IC 890 -> Item 64
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 83, chars 2210-2236, hits: 2)
-- IC 890 -> Item 65
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 83, chars 2210-2236, hits: 2)
-- IC 977 -> Item 66
-- Creation code
-  - Refers to item: Branch (branch: 6, path: 0) (location: source ID 23, line 83, chars 2238-2307, hits: 1)
-- IC 977 -> Item 67
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 84, chars 2252-2296, hits: 1)
-- IC 977 -> Item 68
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 84, chars 2252-2296, hits: 1)
-- IC 1027 -> Item 69
-- Creation code
-  - Refers to item: Line (location: source ID 23, line 87, chars 2317-2336, hits: 1)
-- IC 1027 -> Item 70
-- Creation code
-  - Refers to item: Statement (location: source ID 23, line 87, chars 2317-2336, hits: 1)
-
-Anchors for Contract "VotingTest" (solc 0.8.27, source ID 24):
-
-Anchors for Contract "MockERC721" (solc 0.8.27, source ID 21):
+Anchors for Contract "IERC721" (solc 0.8.27, source ID 19):
 
 Anchors for Contract "TestBase" (solc 0.8.27, source ID 0):
 
-Anchors for Contract "StdUtils" (solc 0.8.27, source ID 11):
+Anchors for Contract "StdCheatsSafe" (solc 0.8.27, source ID 4):
+
+Anchors for Contract "Script" (solc 0.8.27, source ID 1):
+
+Anchors for Contract "stdToml" (solc 0.8.27, source ID 11):
+
+Anchors for Contract "MockERC721" (solc 0.8.27, source ID 22):
+
+Anchors for Contract "IERC165" (solc 0.8.27, source ID 17):
+
+Anchors for Contract "console" (solc 0.8.27, source ID 15):
+
+Anchors for Contract "DeployVoting" (solc 0.8.27, source ID 24):
+- IC 59 -> Item 0
+- Creation code
+  - Refers to item: Function "run" (location: source ID 24, line 9, chars 182-292, hits: 1)
+- IC 136 -> Item 1
+- Creation code
+  - Refers to item: Line (location: source ID 24, line 10, chars 216-235, hits: 1)
+- IC 136 -> Item 2
+- Creation code
+  - Refers to item: Statement (location: source ID 24, line 10, chars 216-235, hits: 1)
+- IC 231 -> Item 3
+- Creation code
+  - Refers to item: Line (location: source ID 24, line 11, chars 245-257, hits: 1)
+- IC 231 -> Item 4
+- Creation code
+  - Refers to item: Statement (location: source ID 24, line 11, chars 245-257, hits: 1)
+- IC 309 -> Item 5
+- Creation code
+  - Refers to item: Line (location: source ID 24, line 12, chars 267-285, hits: 1)
+- IC 309 -> Item 6
+- Creation code
+  - Refers to item: Statement (location: source ID 24, line 12, chars 267-285, hits: 1)
+
+Anchors for Contract "VmSafe" (solc 0.8.27, source ID 14):
+
+Anchors for Contract "StdInvariant" (solc 0.8.27, source ID 6):
+
+Anchors for Contract "StdUtils" (solc 0.8.27, source ID 12):
+
+Anchors for Contract "IERC721TokenReceiver" (solc 0.8.27, source ID 19):
+
+Anchors for Contract "safeconsole" (solc 0.8.27, source ID 23):
+
+Anchors for Contract "StdStyle" (solc 0.8.27, source ID 10):
+
+Anchors for Contract "Vm" (solc 0.8.27, source ID 14):
+
+Anchors for Contract "stdJson" (solc 0.8.27, source ID 7):
+
+Anchors for Contract "stdStorageSafe" (solc 0.8.27, source ID 9):
+
+Anchors for Contract "Test" (solc 0.8.27, source ID 13):
+
+Anchors for Contract "ScriptBase" (solc 0.8.27, source ID 0):
+
+Anchors for Contract "stdStorage" (solc 0.8.27, source ID 9):
+
+Anchors for Contract "VotingTest" (solc 0.8.27, source ID 27):
+
+Anchors for Contract "stdError" (solc 0.8.27, source ID 5):
+
+Anchors for Contract "DeployVotingTest" (solc 0.8.27, source ID 26):
+
+Anchors for Contract "CommonBase" (solc 0.8.27, source ID 0):
+
+Anchors for Contract "stdMath" (solc 0.8.27, source ID 8):
+
+Anchors for Contract "IERC721Metadata" (solc 0.8.27, source ID 19):
+
+Anchors for Contract "IERC20" (solc 0.8.27, source ID 18):
+
+Anchors for Contract "IMulticall3" (solc 0.8.27, source ID 20):
 
